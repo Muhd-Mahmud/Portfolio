@@ -12,8 +12,10 @@ export function NavMenu() {
       <nav className="mx-auto flex max-w-6xl items-center justify-center gap-4 px-6 py-4">
         <div className="flex items-center gap-2 rounded-full border border-white/10 bg-black/60 px-2 py-1 backdrop-blur">
           <NavLink to="/" end className={linkClass}>Home</NavLink>
+          <NavLink to="/about" className={linkClass}>About</NavLink>
           <NavLink to="/publications" className={linkClass}>Publications</NavLink>
           <NavLink to="/projects" className={linkClass}>Projects</NavLink>
+          <NavLink to="/lab" className={linkClass}>Lab</NavLink>
           <NavLink to="/blog" className={linkClass}>Blog</NavLink>
           <NavLink to="/resume" className={linkClass}>Resume</NavLink>
           <NavLink to="/contact" className={linkClass}>Contact</NavLink>

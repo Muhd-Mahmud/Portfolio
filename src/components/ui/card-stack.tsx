@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
-import { SquareArrowOutUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export type CardStackItem = {
@@ -127,8 +126,6 @@ export function CardStack<T extends CardStackItem>({
   }, [autoAdvance, intervalMs, hovering, pauseOnHover, reduceMotion, len, loop, active, next]);
 
   if (!len) return null;
-
-  const activeItem = items[active]!;
 
   return (
     <div

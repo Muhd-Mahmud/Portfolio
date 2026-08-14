@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Personal source documents (served copy lives in public/)
+cv/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

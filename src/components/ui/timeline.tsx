@@ -52,7 +52,6 @@ export const Timeline3D: React.FC<Timeline3DProps> = ({
   events,
   backgroundColor = defaultColors.background,
   primaryColor = defaultColors.primary,
-  secondaryColor = defaultColors.secondary,
   textColor = defaultColors.text,
   accentColor = defaultColors.accent,
   accentTextColor = defaultColors.accentText,

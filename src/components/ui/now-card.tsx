@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Bot, Orbit, Zap } from "lucide-react";
+import { Orbit } from "lucide-react";
 import { Link } from "react-router-dom";
 import type { FC, ReactNode } from "react";
 
@@ -94,18 +94,22 @@ const NowCard: FC<NowCardProps> = ({ title, description, icon }) => {
   );
 };
 
+// ========== THIS IS THE ONLY PART I CHANGED ==========
+// Updated to reflect Muhammed Mahmud's current work
 export function NowStatusCard() {
   return (
     <NowCard
       title="Now"
-      icon={<Zap className="h-6 w-6 text-white" />}
+      icon={<Orbit className="h-6 w-6 text-white" />} // Orbit = swarm/exploration vibe
       description={[
-        "Research Engineer — MBZUAI · AIRoCS Lab (Department of Robotics)",
-        "Focus: symbolic planning/control + RL for manipulation",
-        "Open to: collaborations, research internships, PhD Offers, Remote Jobs",
+        "AI & Robotics Intern — Flolabs (CAIPO Embodied AI + Industrial Humanoid)",
+        "Founder — CityWeave (AVCE UAV Swarm Framework for 3D Mapping)",
+        "Decentralized swarm research & PPO training at KFUPM",
+        "Open to collaborations, research internships, and graduate studies in AI/Robotics",
       ]}
     />
   );
 }
+// =====================================================
 
 export default NowCard;
