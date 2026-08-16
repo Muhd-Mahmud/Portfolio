@@ -16,13 +16,13 @@ export function HomePage() {
           <div className="mx-auto max-w-6xl">
             <Card className="w-full bg-black/[0.96] border border-white/10 relative overflow-hidden">
               <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="white" />
-              <div className="relative h-[360px] md:h-[460px] lg:h-[560px]">
+              <div className="relative h-[240px] sm:h-[300px] md:h-[460px] lg:h-[560px]">
                 <SplineScene
                   scene="https://prod.spline.design/kZDDjO5HuC9GJUM2/scene.splinecode"
                   className="w-full h-full"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent" />
-                <div className="pointer-events-none absolute inset-0 p-8 md:p-12 flex items-center">
+                <div className="pointer-events-none relative md:absolute md:inset-0 p-6 md:p-12 md:flex md:items-center">
                   <div className="max-w-2xl">
                     <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
                       Belgorod State University · Robotics & Mechatronics
