@@ -22,67 +22,67 @@ export function HomePage() {
                   className="w-full h-full"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-r from-black/75 via-black/40 to-transparent" />
-                <div className="pointer-events-none relative md:absolute md:inset-0 p-6 md:p-12 md:flex md:items-center">
-                  <div className="max-w-2xl">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
-                      Belgorod State University · Robotics & Mechatronics
-                    </div>
-                    <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
-                      Mahmud Muhammed
-                    </h1>
-                    <div className="mt-2 text-sm md:text-base text-white/70">
-                      Autonomous Systems | Embodied AI | Swarm Intelligence | SLAM | UAV Systems
-                    </div>
-                    <p className="mt-4 text-lg text-neutral-300 max-w-xl">
-                      Robotics and Mechatronics Engineering student focused on autonomous systems, 
-                      embodied AI, and multi-agent robotics. Founder of CityWeave, contributing to 
-                      humanoid robotics at Flolabs, and researching UAV swarms at KFUPM.
-                    </p>
-                    <div className="mt-4 flex flex-wrap gap-2">
-                      {["Autonomous Systems", "Swarm Intelligence", "Embodied AI", "SLAM", "UAV Systems"].map((chip) => (
-                        <span
-                          key={chip}
-                          className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80"
-                        >
-                          {chip}
-                        </span>
-                      ))}
-                    </div>
-                    {/* Social & CV Download Buttons */}
-                    <div className="pointer-events-auto mt-5 flex flex-wrap items-center gap-3">
-                      <a
-                        href={`${import.meta.env.BASE_URL}Muhammed_Mahmud_CV.pdf`}
-                        download
-                        className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs text-blue-400 hover:bg-blue-500/20 transition-colors"
+              </div>
+              <div className="pointer-events-none relative md:absolute md:inset-0 p-6 md:p-12 md:flex md:items-center">
+                <div className="max-w-2xl">
+                  <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/70">
+                    Belgorod State University · Robotics & Mechatronics
+                  </div>
+                  <h1 className="mt-4 text-4xl md:text-5xl lg:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400">
+                    Mahmud Muhammed
+                  </h1>
+                  <div className="mt-2 text-sm md:text-base text-white/70">
+                    Autonomous Systems | Embodied AI | Swarm Intelligence | SLAM | UAV Systems
+                  </div>
+                  <p className="mt-4 text-lg text-neutral-300 max-w-xl">
+                    Robotics and Mechatronics Engineering student focused on autonomous systems,
+                    embodied AI, and multi-agent robotics. Founder of CityWeave, contributing to
+                    humanoid robotics at Flolabs, and researching UAV swarms at KFUPM.
+                  </p>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    {["Autonomous Systems", "Swarm Intelligence", "Embodied AI", "SLAM", "UAV Systems"].map((chip) => (
+                      <span
+                        key={chip}
+                        className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80"
                       >
-                        <Download size={14} /> Download CV
-                      </a>
-                      <a
-                        href="https://github.com/Muhd-Mahmud"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
-                        aria-label="GitHub"
-                      >
-                        <Github size={16} />
-                      </a>
-                      <a
-                        href="https://linkedin.com/in/mahmud-muhammed"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
-                        aria-label="LinkedIn"
-                      >
-                        <Linkedin size={16} />
-                      </a>
-                      <a
-                        href="mailto:mahmudmuhammed811@gmail.com"
-                        className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
-                        aria-label="Email"
-                      >
-                        <Mail size={16} />
-                      </a>
-                    </div>
+                        {chip}
+                      </span>
+                    ))}
+                  </div>
+                  {/* Social & CV Download Buttons */}
+                  <div className="pointer-events-auto mt-5 flex flex-wrap items-center gap-3">
+                    <a
+                      href={`${import.meta.env.BASE_URL}Muhammed_Mahmud_CV.pdf`}
+                      download
+                      className="inline-flex items-center gap-2 rounded-full border border-blue-500/30 bg-blue-500/10 px-4 py-1.5 text-xs text-blue-400 hover:bg-blue-500/20 transition-colors"
+                    >
+                      <Download size={14} /> Download CV
+                    </a>
+                    <a
+                      href="https://github.com/Muhd-Mahmud"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
+                      aria-label="GitHub"
+                    >
+                      <Github size={16} />
+                    </a>
+                    <a
+                      href="https://linkedin.com/in/mahmud-muhammed"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
+                      aria-label="LinkedIn"
+                    >
+                      <Linkedin size={16} />
+                    </a>
+                    <a
+                      href="mailto:mahmudmuhammed811@gmail.com"
+                      className="rounded-full border border-white/10 bg-white/5 p-1.5 text-white/70 hover:bg-white/10 transition-colors"
+                      aria-label="Email"
+                    >
+                      <Mail size={16} />
+                    </a>
                   </div>
                 </div>
               </div>
