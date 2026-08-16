@@ -105,41 +105,41 @@ export function HomePage() {
                     Research interests
                   </h2>
                 </div>
-                <div className="grid [grid-template-areas:'stack'] place-items-center opacity-100 animate-in fade-in-0 duration-700 min-h-[320px]">
+                <div className="flex flex-col gap-3 md:grid md:[grid-template-areas:'stack'] md:place-items-center md:gap-0 opacity-100 animate-in fade-in-0 duration-700 md:min-h-[320px]">
                   {[
                     {
                       title: "UAV & Multi-Robot Swarms",
                       description: "Decentralized coordination and exploration at scale.",
                       className:
-                        "[grid-area:stack] hover:-translate-y-10 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-white/20 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-black/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+                        "md:[grid-area:stack] md:hover:-translate-y-10 md:before:absolute md:before:w-[100%] md:before:outline-1 md:before:rounded-xl md:before:outline-white/20 md:before:h-[100%] md:before:content-[''] md:before:bg-blend-overlay md:before:bg-black/50 md:grayscale-[100%] md:hover:before:opacity-0 md:before:transition-opacity md:before:duration-700 md:hover:grayscale-0 md:before:left-0 md:before:top-0",
                     },
                     {
                       title: "SLAM & Cooperative 3D Mapping",
                       description: "Distributed perception fused into unified 3D maps.",
                       className:
-                        "[grid-area:stack] translate-x-16 translate-y-10 hover:-translate-y-1 before:absolute before:w-[100%] before:outline-1 before:rounded-xl before:outline-white/20 before:h-[100%] before:content-[''] before:bg-blend-overlay before:bg-black/50 grayscale-[100%] hover:before:opacity-0 before:transition-opacity before:duration-700 hover:grayscale-0 before:left-0 before:top-0",
+                        "md:[grid-area:stack] md:translate-x-16 md:translate-y-10 md:hover:-translate-y-1 md:before:absolute md:before:w-[100%] md:before:outline-1 md:before:rounded-xl md:before:outline-white/20 md:before:h-[100%] md:before:content-[''] md:before:bg-blend-overlay md:before:bg-black/50 md:grayscale-[100%] md:hover:before:opacity-0 md:before:transition-opacity md:before:duration-700 md:hover:grayscale-0 md:before:left-0 md:before:top-0",
                     },
                     {
                       title: "Embodied AI & Humanoids",
                       description: "Perception-to-decision pipelines on real hardware.",
                       className:
-                        "[grid-area:stack] translate-x-32 translate-y-20 hover:translate-y-10",
+                        "md:[grid-area:stack] md:translate-x-32 md:translate-y-20 md:hover:translate-y-10",
                     },
                     {
                       title: "Compute-Efficient Autonomy",
                       description: "Embedded decision systems and reinforcement learning.",
                       className:
-                        "[grid-area:stack] translate-x-48 translate-y-28 hover:translate-y-16",
+                        "md:[grid-area:stack] md:translate-x-48 md:translate-y-28 md:hover:translate-y-16",
                     },
                   ].map((card, index) => (
                     <div
                       key={index}
-                      className={`relative z-10 flex h-36 w-[22rem] -skew-y-[8deg] select-none flex-col justify-between rounded-xl border-2 bg-white/5 backdrop-blur-sm px-4 py-3 transition-all duration-700 after:absolute after:-right-1 after:top-[-5%] after:h-[110%] after:w-[20rem] after:bg-gradient-to-l after:from-black after:to-transparent after:content-[''] hover:z-30 hover:border-white/20 hover:bg-white/10 ${card.className}`}
+                      className={`relative z-10 flex h-auto w-full flex-col justify-between rounded-xl border-2 border-white/10 bg-white/5 backdrop-blur-sm px-4 py-3 transition-all duration-700 md:h-36 md:w-[22rem] md:-skew-y-[8deg] md:select-none md:after:absolute md:after:-right-1 md:after:top-[-5%] md:after:h-[110%] md:after:w-[20rem] md:after:bg-gradient-to-l md:after:from-black md:after:to-transparent md:after:content-[''] md:hover:z-30 md:hover:border-white/20 md:hover:bg-white/10 ${card.className}`}
                     >
                       <div>
                         <p className="text-lg font-medium text-white">{card.title}</p>
                       </div>
-                      <p className="whitespace-nowrap text-sm text-white/80">
+                      <p className="text-sm text-white/80 md:whitespace-nowrap">
                         {card.description}
                       </p>
                     </div>
